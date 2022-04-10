@@ -20,7 +20,7 @@
     "clean": "rimraf lib/*",
     "compile": "npm run compile:rollup",
     "compile:tsc": "tsc -p .",
-    "compile:rollup": "rollup -c",
+    "compile:rollup": "rollup -c -m",
     "watch": "rollup -cw",
     "lint": "eslint src/**/*.{ts,tsx}",
     "prettier": "prettier --write src/**/*",
