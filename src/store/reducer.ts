@@ -228,9 +228,9 @@ function regenerateCombinedReducer() {
 }
 
 export function createReduxStoreReducer(): Reducer {
+  console.log('createReduxStoreReducer')
   regenerateCombinedReducer()
   return (state = defaultState, action) => {
-    console.log('xxx')
     return (getContext().reducers.combined as ReducerFunction)(state, action, state)
   }
 }

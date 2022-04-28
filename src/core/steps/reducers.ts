@@ -21,6 +21,7 @@ import { Logic, LogicInput, ReducerFunction } from '../../types'
 import { AnyAction } from 'redux'
 
 export function createReducers(logic: Logic, input: LogicInput): void {
+  console.log('createReducers:',logic)
   if (!input.reducers) {
     return
   }
